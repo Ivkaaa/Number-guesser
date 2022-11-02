@@ -25,8 +25,8 @@ submitBtn.addEventListener('click', function(){
 
     if(guess === winnerNumber){
         input.disabled = true;
-        input.style.borderColor = '#03fc07';
-        showMessage(`Your guess is correct, YOU WIN!`, '#03fc90')
+        input.style.borderColor = '#34eb98';
+        showMessage(`Your guess is correct, YOU WIN!`, '#34eb98')
         submitBtn.value = 'Play again';
         submitBtn.className += 'play-again';
     }else {
@@ -36,12 +36,12 @@ submitBtn.addEventListener('click', function(){
             input.style.borderColor = 'red';
             //input.value = "";
             //submitBtn.disabled = true;
-            showMessage(`Game over. You lose, ${guess} in't  correct, the correct number was ${winnerNumber}!`, "red")
+            showMessage(`Game over. You lose, ${guess} isn't  correct, the correct number was ${winnerNumber}!`, "red")
             submitBtn.value = 'Play again';
             submitBtn.className += 'play-again';
         }else{
             input.value = "";
-            showMessage(`${guess} is not correct, you have ${numberOfGuess} guesses left`, "red")
+            showMessage(`${guess} isn't correct, you have ${numberOfGuess} guesses left`, "red")
         }
     }
 
